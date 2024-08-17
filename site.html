@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Arslan - Personal Website</title>
+    <style>
+        body {
+            font-family: "Century Schoolbook", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #eee;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            display: none;
+            margin-bottom: 40px;
+        }
+        section.active {
+            display: block;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1em;
+            color: #555;
+        }
+        .about-container {
+            display: flex;
+        }
+        .about-tabs {
+            width: 200px;
+            margin-right: 20px;
+            border-right: 2px solid #ddd;
+        }
+        .about-tabs button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            text-align: left;
+            border: none;
+            background: none;
+            color: #444;
+            cursor: pointer;
+            outline: none;
+        }
+        .about-tabs button:hover,
+        .about-tabs button.active {
+            background-color: #eee;
+            color: #000;
+        }
+        .about-content {
+            flex: 1;
+        }
+        .about-tab {
+            display: none;
+        }
+        .about-tab.active {
+            display: block;
+        }
+        .stars {
+            color: gold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #444;
+            color: #fff;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enes Arslan</h1>
+    <p>Aerospace Engineer</p>
+</header>
+
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About Me</a>
+    <a onclick="showSection('contact')">Contact</a>
+    <a onclick="showSection('depo')">Depo</a>
+</nav>
+
+<div class="container">
+    <section id="home" class="active">
+        <h2>Welcome</h2>
+        <p>Welcome to my personal webpage! Explore to learn more about my work and interests.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-tabs">
+                <button onclick="showAboutTab('education')">Education</button>
+                <button onclick="showAboutTab('experience')">Experience</button>
+                <button onclick="showAboutTab('tools')">Tools</button>
+                <button onclick="showAboutTab('languages')">Languages</button>
+				<button onclick="showAboutTab('other')">Other Stuff</button>
+            </div>
+            <div class="about-content">
+                <div id="education" class="about-tab">
+                    <li><strong>MS in Aerospace Engineering</strong>
+						<ul> 
+						Middle East Technical University <br>
+						2022-2025 <br>
+						CGPA: 3.50 <br>
+						Thesis Title: <i> Experimental Investigation of Flow and Temperature Fields Around Effusion and Film Cooling Plates </i>
+						</ul>
+					</li>	
+				
+                    <li><strong>BS in Aerospace Engineering</strong>
+						<ul> 
+						Middle East Technical University <br>
+						2016-2022 <br>
+						CGPA: 3.08
+						</ul>
+					</li>
+					
+                    <li><strong>Düzce Science High School</strong>
+						<ul> 
+						<i>Tr.</i>Düzce Fen Lisesi <br>
+						2012-2016 <br>
+						i love it here
+						</ul>
+					</li>	
+                </div>
+				
+				<div id="experience" class="about-tab">
+                    <li><strong>Research Assistant</strong>, METU Aerospace Engineering. 2023-..
+						<ul>
+							<b>Courses Assisted:</b> <br>
+							<ul>
+								<li> AE341-Aerodynamics I:  Inviscid and incompressible aerodynamics </li>
+								<li> AE342-Aerodynamics II: Compressible flows, Viscous and incompressible aerodynamics</li>
+								<li> AE410-Aerospace Engineering Labratory: Experimental techniques</li>
+							</ul>
+							
+							<b>Research Interests:</b> <br>
+							<ul>
+								<li>Experimental Aerodynamics</li>
+								<li>Flow measurements: Hot-Wire Anemometry,PIV,Pressure and Force measurements</li>
+								<li>Temperature Measurements: Thermocouples, IR camera, Thermistor</li>
+								<li>Wind Energy and Wind Turbine Aerodynamics</li>
+								<li>Film and Effusion cooling for gas turbine blades and combustor</li>
+							</ul>
+						</ul>
+					</li>
+						
+                    <li><strong>Scientific Project Expert & Wind Tunnel Test Engineer</strong>, METU Center for Wind Energy, 2022-2023
+						<ul>
+							Wind tunnel tests for various fields of industry and research including aerospace, defence, bridges, buildings, etc.
+							<ul>
+								<li> Wind tunnel test model preperation </li>
+								<li> Data acquisition (NI Hardware and labVIEW software), flow and temperature measurements including Hot Wire, PIV.</li>
+								<li> Data reduction and processing, signal processing, FFT, data statistics</li>
+								<li> Wind tunnel maintenance and improvement </li>
+							</ul>
+						</ul>
+					</li>							
+                </div>
+				
+				
+                <div id="tools" class="about-tab">
+                    <p><strong>MATLAB:</strong> <span class="stars">★★★★★</span></p>
+					<p><strong>Python:</strong> <span class="stars">★★★★</span></p>
+                    <p><strong>Fluent:</strong> <span class="stars">★★★</span></p>
+					<p><strong>LabVIEW:</strong> <span class="stars">★★★</span></p>
+					<ul> Data acquisition, automation for wind tunnel test setups, mathematical and statistical operations. </ul>
+                </div>
+
+                <div id="languages" class="about-tab">
+                    <p><strong>Turkish:</strong> Native</p>
+                    <p><strong>English:</strong> Fluent (METU EPE: 96, 2022)</p>
+                    <p><strong>Italian:</strong> Beginner (METU Modern Languages, ITAL 201,202 and 203 courses)</p>
+                    <p><strong>Circassian:</strong> Beginner (self-thought)</p>
+						<ul>
+						Circassian, Adygabze, is an endangered language spoken by less than 100 thoushand people in Turkey, Russia, Jordan, Israel and a few other countries.
+						</ul>
+                </div>
+				
+                <div id="other" class="about-tab">
+                    <p><strong>Accordion:</strong></p>
+					I am trying to teach myself to play a piano accordion by using online sources only.
+
+					<p><strong>Motorcycle:</strong></p> 
+					Just like many other motorcycle riders, my bike is my number one recreational activity. Not only riding it, but I also like washing, cleaning,
+					lubricating, polishing it, etc. 
+					
+					<p><strong>Linguistics:</strong></p>
+					I am a fond of linguistics and languages of the world.
+					Being an engineer provides one to improve analytical skills. 
+					The way of thinking of an engineer is quite suitable for field linguistics.				
+                </div>				
+				
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For inquiries or collaborations, feel free to reach out via email at <a href="mailto:nagoenes0@gmail.com">nagoenes0@gmail.com</a>.</p>
+		<p>You can find me on whole internet by username "@nagoenes" </p>
+		<p>Linkedin: <a href="https:\\linkedin.com/in/nagoenes" target="_blank"> Enes Arslan </a> </p>  
+    </section>
+
+    <section id="depo">
+        <h2>Depo</h2>
+        <p>This is your space to showcase projects, share resources, or store any content you find important.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Enes Arslan. All rights reserved.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+
+    function showAboutTab(tabId) {
+        var tabs = document.querySelectorAll('.about-tab');
+        var buttons = document.querySelectorAll('.about-tabs button');
+        tabs.forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+        buttons.forEach(function(button) {
+            button.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+        document.querySelector('.about-tabs button[onclick="showAboutTab(\'' + tabId + '\')"]').classList.add('active');
+    }
+</script>
+
+</body>
+</html>
