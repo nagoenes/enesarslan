@@ -1,0 +1,692 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>A 6 months long master plan for learning piano accordion</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+	font-family: century schoolbook
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+	font-family: century schoolbook
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+	font-family: century schoolbook
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+	font-family: century schoolbook
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+	font-family: century schoolbook
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+	font-family: century schoolbook
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+	font-family: century schoolbook
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="14156037-c7b2-80a4-b4eb-f8b9ac358890" class="page sans"><header><img class="page-cover-image" src="https://www.constellationmusical.com/pub/media/catalog/product/cache/d8be60fae9af0c1f4309fbc69d3d8611/b/r/br48red.jpg" style="object-position:center 56.35%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🪗</span></div><h1 class="page-title">A 6 months long master plan for learning piano accordion</h1><p class="page-description"></p></header><div class="page-body"><p id="14156037-c7b2-80ae-acc3-d1b515ce01c3" class="">Goals:</p><ul id="14156037-c7b2-80bb-9f0b-e73fbe58de05" class="bulleted-list"><li style="list-style-type:disc">Understand basics of music theory</li></ul><ul id="14156037-c7b2-80f5-837a-cca308b1a390" class="bulleted-list"><li style="list-style-type:disc">Learn the basics of accordion playing</li></ul><ul id="14156037-c7b2-8019-ab1d-c1901cdb60e0" class="bulleted-list"><li style="list-style-type:disc">Practice simple to intermediate songs</li></ul><ul id="14156037-c7b2-80c4-9769-dfbf79c37c12" class="bulleted-list"><li style="list-style-type:disc">Learn and practice the basics of <em>playing by ear</em></li></ul><hr id="14156037-c7b2-8044-8e64-f6fa757f07c4"/><h2 id="14156037-c7b2-80bf-a8e3-d10e0e7dbcd2" class="">1st Month: 18 Nov-15 Dec</h2><p id="14156037-c7b2-806c-8a3d-f61ff11e2397" class="">Objective:</p><ul id="14156037-c7b2-80cb-b806-d8dd03bbf595" class="bulleted-list"><li style="list-style-type:disc">Getting familiar with the instrument</li></ul><ul id="14156037-c7b2-807a-bcb0-e19bc6ed97ce" class="bulleted-list"><li style="list-style-type:disc">Enhancing control over bellow and bass coordination</li></ul><ul id="14156037-c7b2-8076-9de0-ff543a2ed602" class="bulleted-list"><li style="list-style-type:disc">Transition from imitation to independent playing</li></ul><p id="14156037-c7b2-8000-8ade-fc2448cad803" class="">Resources:</p><ul id="14156037-c7b2-8034-8999-ff2cfb48968a" class="bulleted-list"><li style="list-style-type:disc">YouTube tutorials focused on technique.</li></ul><ul id="14156037-c7b2-8003-a2e2-ced7d8a36cdf" class="bulleted-list"><li style="list-style-type:disc">Musescore for free sheet music.</li></ul><h3 id="14156037-c7b2-808d-92a7-c12d83921323" class="">week 1: 18 Nov - 24 Nov</h3><ul id="14156037-c7b2-808b-ba05-cf1f4d0e2da3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn and practice scales and arpeggios on both hands: C major, G major and A minor</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8073-8e13-f8fd5966e4b9" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on smooth bellow changes while maintaining constant volume</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8030-9d4c-df0db3308f3d" class="">week 2: 25 Nov - 1 Dec</h3><ul id="14156037-c7b2-805b-9c99-fd8a27d8b416" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Practice scales and arpeggios on both hands: C major, G major and A minor</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8037-b52e-ca6426843f91" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on smooth bellow changes while maintaining constant volume</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8085-87ff-f89f14a468be" class="">week 3: 2 Dec - 8 Dec</h3><ul id="14156037-c7b2-8004-b3ad-e6e6877f38ca" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn 1 song: Ode to joy</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80bf-91b8-c00b47cae159" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on playing at a steady tempo</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8046-afec-d9cd9bbbb141" class="">week 4: 9 Dec - 15 Dec</h3><ul id="14156037-c7b2-80a6-9921-ed8f125d4152" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn 1 song: Ode to joy</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80df-812e-e7fd68d7efb8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on playing at a steady tempo</span><div class="indented"></div></li></ul><hr id="14156037-c7b2-8065-b951-d3e0c5a10bf1"/><h2 id="14156037-c7b2-804b-84e2-c953818ed7eb" class="">2nd Month: 16 Dec - 12 Jan</h2><p id="14156037-c7b2-80a6-b2d3-d594219e0675" class="">Objective:</p><ul id="14156037-c7b2-8006-b8d5-c2bbbc0ca756" class="bulleted-list"><li style="list-style-type:disc">Play familiar songs without relying on tutorials or sheet music.</li></ul><ul id="14156037-c7b2-80c2-b5ab-dcc820353be9" class="bulleted-list"><li style="list-style-type:disc">Improve ear-training skills.</li></ul><p id="14156037-c7b2-8000-984f-cc1eabd84e81" class="">Resources:</p><ul id="14156037-c7b2-8030-84b8-d3f5ad40621b" class="bulleted-list"><li style="list-style-type:disc">Ear training apps or websites</li></ul><ul id="14156037-c7b2-806d-b4dc-d64de753be3c" class="bulleted-list"><li style="list-style-type:disc">Online accordion forums for ear training entries</li></ul><h3 id="14156037-c7b2-808a-a32f-c17579222492" class="">week 1: 16 Dec - 22 Dec</h3><ul id="14156037-c7b2-8007-bfce-f22eb1c4f33c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Practice identifying notes and intervals using ear-training apps.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8095-8a1b-d1c79f7f00a2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Pick 1 song and try to figure it out by ear. Start with the melody, then add bass accompaniment.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-80c1-ad8f-eb0693af0bf9" class="">week 2: 23 Dec - 29 Dec</h3><ul id="14156037-c7b2-8005-9347-d11a1ed26c90" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Practice identifying notes and intervals using ear-training apps.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80f7-8825-d708c899de3e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Pick 1 song and try to figure it out by ear. Start with the melody, then add bass accompaniment.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8076-9419-d46294d8399b" class="">week 3: 30 Dec - 5 Jan</h3><ul id="14156037-c7b2-80a3-93e2-d2f15191bc43" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn to play 1 popular songs by ear (e.g., &quot;Happy Birthday&quot; or a simple folk tune).</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8037-b70c-cea0ba36e5a0" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Record and analyze. Identify and correct your mistakes</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-802b-bfb0-d2b82f556ffd" class="">week 4: 6 Jan - 12 Jan</h3><ul id="14156037-c7b2-804d-afc7-e8d94335b4e6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn to play 1 popular songs by ear (e.g., &quot;Happy Birthday&quot; or a simple folk tune).</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80ea-8c96-f9544d4c8940" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Record and analyze. Identify and correct your mistakes</span><div class="indented"></div></li></ul><hr id="14156037-c7b2-807b-acc2-e29292050df1"/><h2 id="14156037-c7b2-8064-a0c8-cbf5c8febe78" class="">3rd Month: 13 Jan - 9 Feb</h2><p id="14156037-c7b2-8058-bc15-d2b74a9aba0d" class="">Objective:</p><ul id="14156037-c7b2-8020-a273-f86674bae47a" class="bulleted-list"><li style="list-style-type:disc">Expand Repertoire and Introduce Expression</li></ul><ul id="14156037-c7b2-80b5-bf99-fd56b29060ec" class="bulleted-list"><li style="list-style-type:disc">Add emotional depth to your playing with dynamics and articulation.</li></ul><ul id="14156037-c7b2-8003-9376-ed8c6f69d15b" class="bulleted-list"><li style="list-style-type:disc">Learn songs from different genres.</li></ul><p id="14156037-c7b2-80c1-985f-d357bb26b6e7" class="">Resources:</p><ul id="14156037-c7b2-80d1-883e-ce47f328e975" class="bulleted-list"><li style="list-style-type:disc">Online accordion sheet music websites.</li></ul><ul id="14156037-c7b2-8066-b99d-f935fe5b3aaf" class="bulleted-list"><li style="list-style-type:disc">Dynamics-focused tutorials on YouTube.</li></ul><h3 id="14156037-c7b2-802f-b59a-d23ec7fe8ad7" class="">week 1: 13 Jan - 19 Jan</h3><ul id="14156037-c7b2-808d-be8c-ea6c07e699f8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Choose 1 new piece (can be a waltz). Learn and play it</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-806d-860c-dd828074368b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on dynamics: crescendos, diminuendos, and staccato/legato transitions.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-800b-89ac-c9801ff150c7" class="">week 2: 20 Jan - 26 Jan</h3><ul id="14156037-c7b2-803c-ae7c-fcf8210e1037" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Choose 1 new piece (can be a polka). Learn and play it</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-800e-bece-eece1fde93f0" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on dynamics: crescendos, diminuendos, and staccato/legato transitions.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-80c0-a7e8-db18b45c1cd4" class="">week 3: 27 Jan - 2 Feb</h3><ul id="14156037-c7b2-8040-814e-e914cf688c19" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn a slower, expressive piece (e.g., &quot;La Vie en Rose&quot;).</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8099-a689-c143b6e0a0c9" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Experiment with adding personal flair or improvisation.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-80f1-bd63-c4d376a247ee" class="">week 4: 3 Feb - 9 Mar</h3><ul id="14156037-c7b2-80ee-b72f-d29ac177b28a" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn a slower, expressive piece (e.g., &quot;La Vie en Rose&quot;).</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8005-902a-cabaacbdd4a8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Experiment with adding personal flair or improvisation.</span><div class="indented"></div></li></ul><hr id="14156037-c7b2-80a1-9257-d961d7420850"/><h2 id="14156037-c7b2-8091-87ce-f9e96afa0641" class="">4th Month: 10 Feb - 16 Feb</h2><p id="14156037-c7b2-80f3-adc3-c6059e4de70d" class="">Objective:</p><ul id="14156037-c7b2-804d-8d20-e938f4e7835c" class="bulleted-list"><li style="list-style-type:disc">Improve finger dexterity and bass accompaniment complexity.</li></ul><ul id="14156037-c7b2-80d4-aa2c-d4e109bf3e9e" class="bulleted-list"><li style="list-style-type:disc">Start improvising.</li></ul><p id="14156037-c7b2-80ad-99a3-c490d40837e6" class="">Resources:</p><ul id="14156037-c7b2-804f-8eee-d007d4e2ae83" class="bulleted-list"><li style="list-style-type:disc">Improvisation tutorials.</li></ul><ul id="14156037-c7b2-80db-9837-e8ae0e81c12c" class="bulleted-list"><li style="list-style-type:disc">Backing tracks to practice rhythm and accompaniment.</li></ul><h3 id="14156037-c7b2-8031-a97c-fa697810fb09" class="">week 1: 10 Feb - 16 Feb</h3><ul id="14156037-c7b2-8058-aca8-c2149c46c123" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Practice advanced scales (e.g., chromatic) and fast runs on the keyboard side.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80f1-8731-de1a16a5f606" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Experiment with complex bass patterns (e.g., waltz or tango rhythms).</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8022-99ff-c01a6374ecc1" class="">week 2: 17 Feb - 23 Feb</h3><ul id="14156037-c7b2-800d-be20-fd5ebe818ec9" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Practice advanced scales (e.g., chromatic) and fast runs on the keyboard side.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80b8-b4c4-cf8176088c03" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Experiment with complex bass patterns (e.g., waltz or tango rhythms).</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8019-b44f-fcf70f88a9bb" class="">week 3: 24 Feb - 2 Mar</h3><ul id="14156037-c7b2-8089-bf74-e44afe82764b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Improvise over simple chord progressions using the C major and A minor scales.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8097-83e2-f937c91e5166" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn 1 challenging piece (e.g., &quot;Libertango&quot; by Astor Piazzolla).</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-807c-8750-f10c89f72ac1" class="">week 4: 3 Mar - 9 Mar</h3><ul id="14156037-c7b2-805a-afe1-c53ce76e3a96" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Improvise over simple chord progressions using the C major and A minor scales.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8075-b7d2-cb3c748ce9dc" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Learn 1 challenging piece (e.g., &quot;Libertango&quot; by Astor Piazzolla).</span><div class="indented"></div></li></ul><hr id="14156037-c7b2-8097-80d1-ca9e35fb3729"/><h2 id="14156037-c7b2-807b-8264-c4b50855f149" class="">5th Month: 10 Mar - 6 Apr</h2><p id="14156037-c7b2-8035-a566-de1fb632a75d" class="">Objective:</p><ul id="14156037-c7b2-80c2-af37-f9da136cd232" class="bulleted-list"><li style="list-style-type:disc">Create a polished repertoire for casual performances.</li></ul><ul id="14156037-c7b2-809b-b7e1-f913c73df5eb" class="bulleted-list"><li style="list-style-type:disc">Refine technical and expressive elements.</li></ul><p id="14156037-c7b2-8095-9979-d03cf1b3fe6c" class="">Resources:</p><ul id="14156037-c7b2-8095-ad7e-e3f6cb68def7" class="bulleted-list"><li style="list-style-type:disc">Accordion performance videos for inspiration.</li></ul><ul id="14156037-c7b2-8011-9a93-eb05880d64b5" class="bulleted-list"><li style="list-style-type:disc">Online communities like r/accordion for feedback</li></ul><h3 id="14156037-c7b2-8048-bea2-f4c882e4d3b9" class="">week 1: 10 Mar - 16 Mar</h3><ul id="14156037-c7b2-8008-85b6-ca62b7299abf" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Choose 4-5 favorite pieces from your repertoire.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-803f-8813-f4d8c4553d65" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on perfecting transitions, tempo, and expression.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8005-bc2d-d18447aee5d1" class="">week 2: 17 Mar - 23 Mar</h3><ul id="14156037-c7b2-8073-894d-c6a6fa5d7d20" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Choose 4-5 favorite pieces from your repertoire.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80f3-9a00-c6c6a21caed3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Focus on perfecting transitions, tempo, and expression.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8073-9787-d670a34f93cf" class="">week 3: 24 Mar - 30 Mar</h3><ul id="14156037-c7b2-808b-985f-c429a408391c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Perform for friends, family, or record videos for feedback.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80b8-902d-d47d4bd70f7e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Adjust based on feedback and work on weaker areas.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-8051-8fe9-f46d03b78089" class="">week 4: 31 Mar - 6 Apr</h3><ul id="14156037-c7b2-806d-a89c-cb3aeddb32e8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Perform for friends, family, or record videos for feedback.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8062-bf2a-e6fdd44f471b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Adjust based on feedback and work on weaker areas.</span><div class="indented"></div></li></ul><hr id="14156037-c7b2-808e-a01a-f5254ae7e52f"/><h2 id="14156037-c7b2-801f-9d42-f5873645e5ab" class="">6th Month: 7 Apr - 4 May</h2><p id="14156037-c7b2-803c-9d73-c58ead9884b4" class="">Objective:</p><ul id="14156037-c7b2-8011-8c7a-c07d38ee6783" class="bulleted-list"><li style="list-style-type:disc">Develop your unique style.</li></ul><ul id="14156037-c7b2-80a5-b864-f58cac5dd67b" class="bulleted-list"><li style="list-style-type:disc">Start arranging or composing your own pieces.</li></ul><p id="14156037-c7b2-80f6-92d9-c514247577e6" class="">Resources:</p><ul id="14156037-c7b2-80bf-a9ee-cc6a20a63290" class="bulleted-list"><li style="list-style-type:disc">Online tools for composition (e.g., Musescore).</li></ul><ul id="14156037-c7b2-80ed-b4c9-c5f73a72cbfd" class="bulleted-list"><li style="list-style-type:disc">Videos on accordion arrangements.</li></ul><h3 id="14156037-c7b2-8079-81a9-d2498eac0dfb" class="">week 1: 7 Apr - 13 Apr</h3><ul id="14156037-c7b2-8079-8be6-c8b5e635f885" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Arrange a simple piece you love for the accordion.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8052-a5df-c9803792e3fb" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Experiment with adding embellishments or variations to your playing.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-80a7-b559-e6d6d79bc1ab" class="">week 2: 14 Apr - 20 Apr</h3><ul id="14156037-c7b2-800f-85c4-f610f94c9571" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Arrange a simple piece you love for the accordion.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-804f-91d9-c956b4fec694" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Experiment with adding embellishments or variations to your playing.</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-804a-87d5-e46bdfd3524c" class="">week 3: 21 Apr - 27 Apr</h3><ul id="14156037-c7b2-800d-8d93-dc38861bca2c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Compose a short melody or simple song using your skills.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-80ec-8c3c-d9cd8b7cfee2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Plan for your next goals in accordion playing (e.g., mastering specific styles).</span><div class="indented"></div></li></ul><h3 id="14156037-c7b2-80c7-bf54-cce7bdd2db5f" class="">week 4: 28 Apr - 4 May</h3><ul id="14156037-c7b2-802e-9261-f2a3769a76f0" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Compose a short melody or simple song using your skills.</span><div class="indented"></div></li></ul><ul id="14156037-c7b2-8082-9da8-e809c2be60c2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Plan for your next goals in accordion playing (e.g., mastering specific styles).</span><div class="indented"></div></li></ul><p id="14156037-c7b2-807a-b143-f3b3ec83ea1e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
